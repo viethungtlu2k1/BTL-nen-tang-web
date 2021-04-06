@@ -1,0 +1,25 @@
+
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 13px;  
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.gird{
+    width: 1270px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.gird__full-width{ 
+    width: 100%;
+}
+.gird__row{     /* những thẻ nằm trong class này nằm trong 1 hàng ngang, vượt qua width sẽ nhảy xuống hàng*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#demo{
+    width: 769px;
+}
