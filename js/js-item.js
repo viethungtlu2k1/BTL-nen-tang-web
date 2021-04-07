@@ -1,4 +1,4 @@
-/* readmore */
+/* readmore */    
 $(document).ready(function () {
     $('.read-more').readall({
         // Default values

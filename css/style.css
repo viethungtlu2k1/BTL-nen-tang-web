@@ -484,7 +484,6 @@ button.search-buttom{
     line-height: 37px;
 }
 .icon-fb{
-   display: inline-flex;
    justify-content: center;
    float: left;
     width: 41px;
@@ -777,10 +776,14 @@ a.km-item{
 }
 .container-item{
     width: 224px;
-    height: 308px;
+    height: auto;
 }
 a.container-item{
     color: #242424;
+}
+.cont-header .tab{
+    display: flex;
+    justify-content: center;
 }
 .tab img{
     width: 120px;
@@ -792,7 +795,14 @@ a.container-item{
     height: 60px;
     text-align: center;
 }
-
+.atc-img-tab{
+    display: flex;
+    justify-content: center;
+   
+}
+.bt-red-a{
+    border-bottom: 4px solid rgb(255, 66, 78);
+}
 
 .show-item{
     background-color: #ffffff;
@@ -2303,4 +2313,12 @@ span.tt{  /* tạm tính  */
 }
 .cart-submit:hover{
     background: rgb(255, 15, 30);
+}
+
+
+.fa-book{
+    color: #000000  !important;
+    width: 13px;
+    height: 13px;
+    margin-left: 12px;
 }
