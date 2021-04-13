@@ -835,6 +835,7 @@ a.container-item{
 }
 .img-sp{
     text-align: center;
+    margin-bottom: 12px;
 }
 .star svg{
     font-size: 10px;
@@ -1385,8 +1386,7 @@ span.gntd{
     height: 16px;
     margin-right: 2px;
 }
-.check-gh i{
-    opacity: 0.3;
+.check-gh input{
     margin-right: 10px;
     margin-top: 3px;
     font-size: 15px;
@@ -1821,7 +1821,7 @@ img.seller-logo{
 .seller-detail{
     display: flex;
 }
-.seller-star i{
+.seller-star svg{
     color: rgb(255, 193, 32);
     margin-left: 3px;;
 }
@@ -2002,11 +2002,11 @@ button.readall-button:hover{
     width: 272px;
     display: none;
 }
-.noti-add-stt i{
+.noti-add-stt svg{
     color: #4caf50;
     font-size: 17px;
     margin-right: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 .noti-add-stt{
     display: flex;
