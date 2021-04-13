@@ -256,4 +256,46 @@ $(document).ready(function () {
     });*/
 
 
+    /*  thời gian giảm dần */
+    var gio = $(".gio").html();
+    var phut = $(".phut").html();
+    var giay = $(".giay").html();
+
+    setInterval(function(){
+        giay = Number(giay);
+        giay--;
+        if(giay == "-1"){
+            giay = 59;
+        }
+        if(giay/10 < 1){
+            giay = String(giay);
+            giay = '0' + giay;
+        }
+        $(".giay").html(giay);
+
+        if(giay == 59) {
+            phut = Number(phut);
+            phut--;
+            if(phut == "-1"){
+                phut = 59;
+            }
+            if(phut/10 < 1){
+                phut = String(phut);
+                phut = '0' + phut;
+            }
+            $(".phut").html(phut);
+            if(phut == 59) {
+                gio = Number(gio);
+                gio--;
+                if(gio == "-1"){
+                    gio = 59;
+                }
+                if(gio/10 < 1){
+                    gio = String(gio);
+                    gio = '0' + gio;
+                }
+                $(".gio").html(gio);
+            }
+        }
+    },1000)
 })

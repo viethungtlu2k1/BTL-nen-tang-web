@@ -869,7 +869,6 @@ a.container-item{
   /*  footer-top */
 .footer-top{
     margin-top: 50px;
-    background-color: rgb(247, 247, 247);;
 }   
 .footer-top-cont{
     display: flex;
@@ -977,6 +976,12 @@ span.ex{
 .block span{
     color: #333333;
 }
+.mg-b-10{
+    margin-bottom: 7px !important;
+}
+.mg-t-50{
+    margin-top: 50px !important;
+}
 .bock-top{
     font-size: 13px;
     color: #333333;
@@ -1008,6 +1013,7 @@ span.ex{
 .download{
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 .download img{
     width: 134px;
@@ -2321,4 +2327,99 @@ span.tt{  /* tạm tính  */
     width: 13px;
     height: 13px;
     margin-left: 12px;
+}
+.dmsp:hover .dropdown{
+    display: block;
+}
+    
+
+
+
+/*  gia sốc hôm nay  */
+.gia-soc-hom-nay{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+.header-gshn img{
+    height: 28px;
+}
+.header-gshn{
+    border-bottom: 1px solid rgb(244, 244, 244);
+    padding: 16px;
+    height: 64px;
+}
+.gshn-item a img{
+    width: 192px;
+    height: 192px;
+}
+.time-back{
+    float: right;
+    cursor: pointer;
+}
+span.time-i{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0px 2px;
+    padding: 0px 3px;
+    background-color: rgb(255, 66, 78);
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+}
+
+
+
+
+.gshn-list{
+    display: flex;
+
+}
+.gshn-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+    width: 248px;
+    text-align: center;
+}
+.gshn-item-sell{
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(36, 36, 36);
+    margin: 12px 0px 8px;
+    display: block;
+}
+.sll-dell img.icon-fire-sell{
+    width: 23px;
+    height: 23px;
+}
+.sll-dell{
+    background-color: rgb(255, 170, 175);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20px;
+}
+.item-progress{
+    background-color: rgb(255, 66, 78);
+    height: 20px;
+    border-radius: 10px;
+    width: 51%;
+}
+.sll-dell span{
+    position: absolute;
+    top: 2px;
+    right: 85px;
+    color: #ffffff;
+    font-size: 11px;
+}
+.sll-dell img.icon-fire-sell{
+    position: absolute;
+    top: -9px;
+left: 7px;
 }
