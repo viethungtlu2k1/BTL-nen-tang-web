@@ -261,41 +261,22 @@ $(document).ready(function () {
     var phut = $(".phut").html();
     var giay = $(".giay").html();
 
-    setInterval(function(){
+     setInterval(function(){
+        gio = Number(gio);
+        phut = Number(phut);
         giay = Number(giay);
         giay--;
-        if(giay == "-1"){
-            giay = 59;
-        }
-        if(giay/10 < 1){
-            giay = String(giay);
-            giay = '0' + giay;
-        }
+        phut = (giay < 0) ? --phut : phut;
+        gio = (phut < 0) ? --gio : gio;
+        if (gio < 0) clearInterval();
+        giay = (giay < 0) ? 59 : giay--;
+        giay  = (giay < 10) ? '0' + giay : giay;
+        phut = (phut < 0) ? 59 : phut--;
+        phut  = (phut < 10) ? '0' + phut : phut;
+        gio  = (gio < 10) ? '0' + gio : gio;
+        $(".gio").html(gio);
+        $(".phut").html(phut);
         $(".giay").html(giay);
-
-        if(giay == 59) {
-            phut = Number(phut);
-            phut--;
-            if(phut == "-1"){
-                phut = 59;
-            }
-            if(phut/10 < 1){
-                phut = String(phut);
-                phut = '0' + phut;
-            }
-            $(".phut").html(phut);
-            if(phut == 59) {
-                gio = Number(gio);
-                gio--;
-                if(gio == "-1"){
-                    gio = 59;
-                }
-                if(gio/10 < 1){
-                    gio = String(gio);
-                    gio = '0' + gio;
-                }
-                $(".gio").html(gio);
-            }
-        }
     },1000)
+    
 })
