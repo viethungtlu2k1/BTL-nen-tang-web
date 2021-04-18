@@ -846,6 +846,11 @@ a.container-item{
     font-size: 10px;
     color: gold;
 }
+.star span{
+    font-size: 11px;
+    line-height: 16px;
+    color: rgb(120, 120, 120);
+}
 .discount{
     display: flex;
 }
@@ -2096,9 +2101,8 @@ a.name-seller{
     align-items: center;
     text-decoration: none;
 }
-a.name-seller i{
+a.name-seller svg {
     margin-left: 10px;
-    opacity: 0.5    ;
 }
 .cart-products-inner{
     display: flex;
